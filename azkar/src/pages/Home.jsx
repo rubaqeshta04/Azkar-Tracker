@@ -12,12 +12,13 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen bg-linear-to-br from-[#004d40] to-[#00796b] flex flex-col items-center justify-center p-6 dir-rtl"
+      className="min-h-screen bg-gradient-to-br from-[#004d40] to-[#00796b] flex flex-col items-center justify-center p-6 dir-rtl"
       dir="rtl"
     >
+      {/* شعار وترويسة */}
       <div className="w-full max-w-md text-center mb-10">
         <div className="inline-block px-6 py-5 bg-white/10 backdrop-blur-md rounded-3xl mb-4 shadow-2xl">
-          <span className="text-8xl flex items-center text-white">
+          <span className="text-8xl flex items-center justify-center text-white">
             <ImportContactsIcon fontSize="large" />
           </span>
         </div>
@@ -29,13 +30,15 @@ export default function Home() {
         </p>
       </div>
 
+      {/* الأزرار */}
       <div className="w-full max-w-md space-y-4">
+        {/* أذكار الصباح */}
         <button
           onClick={() => navigate("/morning")}
           className="group relative w-full bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl flex items-center justify-between hover:bg-white/20 transition-all duration-300 shadow-xl overflow-hidden"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 text-[#004d40] bg-yellow-400/50 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <div className="w-14 h-14 p-2 text-[#004d40] bg-yellow-400/50 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
               <SunnyIcon fontSize="medium" />
             </div>
             <div className="flex flex-col text-right ">
@@ -50,12 +53,13 @@ export default function Home() {
           </span>
         </button>
 
+        {/* أذكار المساء */}
         <button
           onClick={() => navigate("/evening")}
           className="group relative w-full bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl flex items-center justify-between hover:bg-white/20 transition-all duration-300 shadow-xl overflow-hidden"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 text-[#004d40] bg-indigo-400/40 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <div className="w-14 h-14 p-2 text-[#004d40] bg-indigo-400/40 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
               <BedtimeIcon fontSize="medium" />
             </div>
             <div className="flex flex-col text-right ">
@@ -70,12 +74,13 @@ export default function Home() {
           </span>
         </button>
 
+        {/* أذكار النوم */}
         <button
           onClick={() => navigate("/sleep")}
           className="group relative w-full bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl flex items-center justify-between hover:bg-white/20 transition-all duration-300 shadow-xl overflow-hidden"
         >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 text-[#004d40] bg-indigo-400/60 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+          <div className="flex items-center gap-6">
+            <div className="w-14 h-14 p-2 text-[#004d40] bg-indigo-400/60 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
               <AlarmOnIcon fontSize="medium" />
             </div>
 
@@ -92,6 +97,7 @@ export default function Home() {
         </button>
       </div>
 
+      {/* Footer */}
       <footer className="mt-12 text-white/40 text-sm font-medium">
         تم التطوير بكل ❤️ لخدمتكم
       </footer>
