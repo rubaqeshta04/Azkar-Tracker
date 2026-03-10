@@ -80,7 +80,7 @@ export default function Home() {
           className="group relative w-full bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-3xl flex items-center justify-between hover:bg-white/20 transition-all duration-300 shadow-xl overflow-hidden"
         >
           <div className="flex items-center gap-6">
-            <div className="w-14 h-14 p-2 text-[#004d40] bg-indigo-400/60 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+            <div className="w-14 h-14 p-2 text-[#ffeb3b] bg-[#000000] rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
               <AlarmOnIcon fontSize="medium" />
             </div>
 
