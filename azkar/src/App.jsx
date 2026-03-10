@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Home from "./pages/Home";
+import AzkarDetail from "./components/AzkarDetail";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
-    <h1 className='bg-red-600'>ruba</h1>
-   </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:type" element={<AzkarDetail />} />
+      </Routes>
+    </Router>
+
+  );
 }
 
-export default App
+export default App;
