@@ -46,12 +46,14 @@ export default function AzkarDetail() {
   return (
     <div
       className={`min-h-screen p-6 flex flex-col items-center ${
-        highContrast ? "bg-[#1F3A5F] text-white" : "bg-white text-black"
+        highContrast
+          ? "bg-[#1F3A5F] text-white"
+          : "bg-gradient-to-br from-[#004d40] to-[#00796b] text-white"
       }`}
     >
       <div className="w-full max-w-md flex justify-between items-center mb-6">
         <button
-          className="text-white font-bold flex items-center gap-2 hover:text-teal-300 hover:scale-105 hover:underline transition-all duration-300"
+          className="text-white font-bold flex items-center gap-2 hover:text-teal-200 hover:scale-105 hover:underline transition-all duration-300"
           onClick={() => navigate("/")}
         >
           ← رجوع
